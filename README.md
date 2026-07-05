@@ -17,5 +17,24 @@ sudo yum install jenkins
 sudo systemctl enable jenkins
 sudo systemctl daemon-reload
 
+### Adding disk space to the jenkins home directory for master and the slave nodes
+Partition the disk
+growpart /dev/nvme0n1 4
+
+lvextend -L +10G /dev/mapper/RootVG-varVol
+lvextend -L +10G /dev/mapper/RootVG-rootVol
+lvextend -l +100%FREE /dev/mapper/RootVG-homeVol
+
+xfs_growfs /
+xfs_growfs /var
+xfs_growfs /home
+
 ### Jenkins Plugins
 Pipeline: stage viewer
+
+
+### Master Agent Architecture
+
+* Create credentials to connect agent
+* Install Java in agent
+* Select Non verification strategy
