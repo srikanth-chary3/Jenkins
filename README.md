@@ -14,6 +14,7 @@ sudo yum upgrade
 * To run Jenkins, Java runtime is mandatory
 sudo yum install fontconfig java-21-openjdk
 sudo yum install jenkins
+sudo systemctl enable jenkins
 sudo systemctl daemon-reload
 
 ### Jenkins Plugins
