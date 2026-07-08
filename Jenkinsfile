@@ -1,6 +1,8 @@
 pipeline {
     agent {
-        label 'AGENT-1'
+        node {
+            label 'AGENT-1'
+        }
     }
     environment {
         Name =  "Srikanth"
@@ -21,20 +23,20 @@ pipeline {
                     """
                 }
             }
-            post {
-                always {
-                    echo "I always print this line at the end of the Pipeline"
-                    cleanWs()
-                }
-                success {
-                    echo "I Will print if the pipeline succeeds"
-                }
-                failure {
-                    echo "I will print if the pipeline fails"
-                }
-                aborted {
-                    echo "I will print if the pipeline is aborted"
-                }
+        }
+    post {
+            always {
+                echo "I always print this line at the end of the Pipeline"
+                cleanWs()
+            }
+            success {
+                echo "I Will print if the pipeline succeeds"
+            }
+            failure {
+                echo "I will print if the pipeline fails"
+            }
+            aborted {
+                echo "I will print if the pipeline is aborted"
             }
         }
     }
