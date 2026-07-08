@@ -30,4 +30,11 @@ In pipelines we have 3 most imp things they are:
     * in stages we write steps and scripts
     * environment variables
     * options
-    * post build
+    * post build and its different types
+        * always
+        * success
+        * failure
+        * aborted etc...
+    * Poll with SCM (cronjob or crontab)
+
+
