@@ -4,9 +4,6 @@ pipeline {
             label 'AGENT-1'
         }
     }
-    environment {
-        Name =  "Srikanth"
-    }
     stages {
         stage ("Hello") {
             steps {
@@ -24,20 +21,20 @@ pipeline {
                 }
             }
         }
+    }
     post {
-            always {
-                echo "I always print this line at the end of the Pipeline"
-                cleanWs()
-            }
-            success {
-                echo "I Will print if the pipeline succeeds"
-            }
-            failure {
-                echo "I will print if the pipeline fails"
-            }
-            aborted {
-                echo "I will print if the pipeline is aborted"
-            }
+        always {
+            echo "I always print this line at the end of the Pipeline"
+            cleanWs()
+        }
+        success {
+            echo "I Will print if the pipeline succeeds"
+        }
+        failure {
+            echo "I will print if the pipeline fails"
+        }
+        aborted {
+            echo "I will print if the pipeline is aborted"
         }
     }
 }
