@@ -8,7 +8,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building'
-                echo 'Webhook Added'
             }
         }
 		stage('Test') {
