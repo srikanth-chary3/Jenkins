@@ -1,24 +1,41 @@
 pipeline {
     agent {
-        node {
-            label 'AGENT-1'
-        }
+        label 'AGENT-1'
+    }
+    environment {
+        Name =  "Srikanth"
     }
     stages {
-        stage('Build') {
+        stage ("Hello") {
             steps {
-                echo 'Building'
+                sh "env"
+                echo "${env.Name}"
             }
         }
-		stage('Test') {
-			steps {
-				echo 'Testing'
-			}
-		}
-		stage('Deploy') {
-			steps {
-				echo 'Deploying'
-			}
-		}
+        stage ("Script") {
+            steps {
+                script {
+                    sh """
+                    cat /etc/os-release
+                    sleep 10
+                    """
+                }
+            }
+            post {
+                always {
+                    echo "I always print this line at the end of the Pipeline"
+                    cleanWs()
+                }
+                success {
+                    echo "I Will print if the pipeline succeeds"
+                }
+                failure {
+                    echo "I will print if the pipeline fails"
+                }
+                aborted {
+                    echo "I will print if the pipeline is aborted"
+                }
+            }
+        }
     }
 }
