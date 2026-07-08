@@ -31,6 +31,7 @@ xfs_growfs /home
 
 ### Jenkins Plugins
 Pipeline: stage viewer
+GitHub
 
 
 ### Master Agent Architecture
