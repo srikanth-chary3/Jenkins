@@ -1,0 +1,33 @@
+### Topics discussed in Jenkins
+* Jenkins Architecture - like Master and Slave Nodes
+* Freestyle job
+* Pipelines
+    * Scripted Pipeline
+    * Declerative Pipeline - 2.0 (Most used pipeline)
+    * Hybrid Pipeline - Combination of scripted and declerative pipelines called Hybrid pipeline
+* Adding different nodes to the jenkins cluster like - linux, mac and windows for different types of builds or apps
+* Adding nodes to jenkins in different way like SSH with username and passwd or SSH username with SSH key etc
+* Adding labels to the Nodes like Node-1, Agent-1, Nodejs_Node etc...
+* Plugins like
+    * stage view
+    * github
+    * git
+    * maven
+    * docker
+    * kubectl, etc...
+
+#### Pipelines
+In pipelines we have 3 most imp things they are:
+1. Pre Build
+2. Build
+3. Post Build
+
+* Scripted pipeline
+* Declerative Pipeline
+    * most used one
+    * we use nodes here in pipeline
+    * it has stages
+    * in stages we write steps and scripts
+    * environment variables
+    * options
+    * post build
