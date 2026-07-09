@@ -7,6 +7,10 @@ pipeline {
     environment {
         Name = "Srikanth"
     }
+    options {
+        timeout(time: 10, unit: SECONDS)
+        disableConcurrentBuilds()
+    }
     stages {
         stage ("Hello") {
             steps {
