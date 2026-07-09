@@ -51,7 +51,7 @@ pipeline {
                     string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
                 }
             }
-            
+
             // When is a conditional function, it is used in the pipeline whether the condition meets or not while running the pipeline
             when {
                 expression { "$params.DEPLOY" == "true" }
@@ -59,7 +59,16 @@ pipeline {
             steps {
                 script{
                     sh """
-                        echo "Building"
+                    echo "Building"
+                    echo $COURSE
+                    sleep 10
+                    env
+
+                    echo "Hello ${params.PERSON}"
+                    echo "Biography: ${params.BIOGRAPHY}"
+                    echo "Toggle: ${params.DEPLOY}"
+                    echo "Choice: ${params.CHOICE}"
+                    echo "Password: ${params.PASSWORD}"
                     """
                 }
             }
