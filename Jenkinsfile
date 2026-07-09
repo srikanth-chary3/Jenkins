@@ -4,6 +4,7 @@ pipeline {
             label 'AGENT-1'
         }
     }
+    // There variables are global variable and we can access them accross the jenkinsfile anywhrere in pipeline
     environment {
         Name = "Srikanth"
     }
