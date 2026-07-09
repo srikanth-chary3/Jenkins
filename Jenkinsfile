@@ -41,6 +41,16 @@ pipeline {
                     """
                 }
             }
+        stage ("Deployment") {
+            // This input section is used like parameters but it is mostly used with when condition etc...
+            input {
+                message "Should we continue?"
+                ok "Yes, we should."
+                submitter "alice,bob"
+                parameters {
+                    string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+                }
+            }
         }
     }
     post {
