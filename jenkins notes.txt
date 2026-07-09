@@ -37,4 +37,4 @@ In pipelines we have 3 most imp things they are:
         * aborted etc...
     * Poll with SCM (cronjob or crontab)
     * GitHub Webhook and its configuration
-    * 
+        * Using github webhook is better than poll SCM
