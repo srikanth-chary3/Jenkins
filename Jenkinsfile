@@ -7,6 +7,7 @@ pipeline {
     environment {
         Name = "Srikanth"
     }
+    // Options are used for special purpose
     options {
         timeout(time: 10, unit: SECONDS)
         disableConcurrentBuilds()
