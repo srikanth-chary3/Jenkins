@@ -54,7 +54,7 @@ pipeline {
 
             // When is a conditional function, it is used in the pipeline whether the condition meets or not while running the pipeline
             when {
-                expression { "$params.DEPLOY" == "true" }
+                expression { "$params.DEPLOY" == "true" } // Here we are checking the condition with DEPLOY param
             }
             steps {
                 script{
