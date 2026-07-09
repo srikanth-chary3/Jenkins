@@ -4,6 +4,9 @@ pipeline {
             label 'AGENT-1'
         }
     }
+    environment {
+        Name = "Srikanth"
+    }
     stages {
         stage ("Hello") {
             steps {
