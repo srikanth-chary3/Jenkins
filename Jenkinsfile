@@ -25,6 +25,7 @@ pipeline {
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
 
+    // Stages start from here
     stages {
         stage ("Hello") {
             steps {
