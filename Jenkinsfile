@@ -72,6 +72,14 @@ pipeline {
                     """
                 }
             }
+        stage('Test') {
+            steps {
+                script{
+                    sh """
+                        echo "Building"
+                    """
+                }
+            }
         }
     }
     post {
