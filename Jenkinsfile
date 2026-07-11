@@ -16,6 +16,7 @@ pipeline {
     // Options
     options {
         timeout (time: 10, unit: 'SECONDS')
+        disableConcurrentBuilds()
     }
 
 // This is said to be Build section
@@ -42,7 +43,6 @@ pipeline {
                         echo
                         echo "Hello from the Script..!"
                         echo
-                        // used while using abort function
                         # sleep '20'
                     """
                 }
