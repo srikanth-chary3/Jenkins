@@ -52,6 +52,7 @@ pipeline {
     post {
         always {
             echo "I will say hello again"
+            // It cleans the workspace
             cleanWs()
         }
         success {
