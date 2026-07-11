@@ -43,6 +43,7 @@ pipeline {
                         echo
                         echo "Hello from the Script..!"
                         echo
+                        # used while checking the abort function in post build section
                         # sleep '20'
                     """
                 }
