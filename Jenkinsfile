@@ -1,12 +1,11 @@
 // This is said to be Pre-Build section
 pipeline {
-    // Using a default agent
-    agent any
-    // agent {
-    //     node {
-    //         label "AGENT-1"
-    //     }
-    // }
+    Using a default agent
+    agent {
+        node {
+            label "AGENT-1"
+        }
+    }
 
 // This is said to be Build section
     stages {
