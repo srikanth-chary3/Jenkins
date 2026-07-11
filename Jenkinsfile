@@ -10,7 +10,7 @@ pipeline {
 
 // This is said to be Build section
     stages {
-        stage("Build") {
+        stage ("Build") {
             steps {
                 echo "Building"
                 script {
@@ -22,7 +22,7 @@ pipeline {
                 }
             }
         }
-        stage("Test") {
+        stage ("Test") {
             steps {
                 echo "Testing"
                 script {
@@ -34,7 +34,7 @@ pipeline {
                 }
             }
         }
-        stage("Deploy") {
+        stage ("Deploy") {
             steps {
                 echo "Deploying"
                 script {
