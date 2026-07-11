@@ -1,10 +1,11 @@
 // This is said to be Pre-Build section
 pipeline {
-    agent {
-        node {
-            label "AGENT-1"
-        }
-    }
+    agent any
+    // agent {
+    //     node {
+    //         label "AGENT-1"
+    //     }
+    // }
 
 // This is said to be Build section
     stages {
@@ -45,7 +46,7 @@ pipeline {
             }
         }
     }
-    
+
 // This is said to be Post-Build section
     post {
         always {
