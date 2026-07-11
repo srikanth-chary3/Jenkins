@@ -5,6 +5,10 @@ pipeline {
             label "AGENT-1"
         }
     }
+    environment {
+        COURSE="Jenkins"
+        DURATION="14 Hrs"
+    }
 
 // This is said to be Build section
     stages {
@@ -16,6 +20,7 @@ pipeline {
                         echo
                         echo "Hello from the Script..!"
                         echo
+                        echo $COURSE
                     """
                 }
             }
