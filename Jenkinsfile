@@ -5,9 +5,16 @@ pipeline {
             label "AGENT-1"
         }
     }
+
+    // Environment Variables
     environment {
         COURSE="Jenkins"
         DURATION="14 Hrs"
+    }
+
+    // Options
+    options {
+        timeout (time: 10, unit: 'SECONDS')
     }
 
 // This is said to be Build section
