@@ -1,6 +1,5 @@
 // This is said to be Pre-Build section
 pipeline {
-    Using a default agent
     agent {
         node {
             label "AGENT-1"
