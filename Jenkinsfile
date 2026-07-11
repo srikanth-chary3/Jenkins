@@ -32,5 +32,8 @@ pipeline {
         failure {
             echo "I will say hello, when it is a Failure"
         }
+        aborted {
+            echo "I will say hello, when it is Aborted or Interrupted"
+        }
     }
 }
