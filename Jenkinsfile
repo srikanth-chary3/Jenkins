@@ -12,7 +12,6 @@ pipeline {
     stages {
         stage ("Build") {
             steps {
-                echo "Building"
                 script {
                     sh """
                         echo
@@ -24,7 +23,6 @@ pipeline {
         }
         stage ("Test") {
             steps {
-                echo "Testing"
                 script {
                     sh """
                         echo
@@ -36,7 +34,6 @@ pipeline {
         }
         stage ("Deploy") {
             steps {
-                echo "Deploying"
                 script {
                     sh """
                         echo
