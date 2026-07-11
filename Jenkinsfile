@@ -8,16 +8,31 @@ pipeline {
         stage("Build") {
             steps {
                 echo "Building"
+                script {
+                    sh """
+                        echo "Hello from the Script..!
+                    """
+                }
             }
         }
         stage("Test") {
             steps {
                 echo "Testing"
+                script {
+                    sh """
+                        echo "Hello from the Script..!
+                    """
+                }
             }
         }
         stage("Deploy") {
             steps {
                 echo "Deploying"
+                script {
+                    sh """
+                        echo "Hello from the Script..!
+                    """
+                }
             }
         }
     }
