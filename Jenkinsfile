@@ -10,7 +10,9 @@ pipeline {
                 echo "Building"
                 script {
                     sh """
+                        echo
                         echo "Hello from the Script..!
+                        echo
                     """
                 }
             }
@@ -20,7 +22,9 @@ pipeline {
                 echo "Testing"
                 script {
                     sh """
+                        echo
                         echo "Hello from the Script..!
+                        echo
                     """
                 }
             }
@@ -30,7 +34,9 @@ pipeline {
                 echo "Deploying"
                 script {
                     sh """
+                        echo
                         echo "Hello from the Script..!
+                        echo
                     """
                 }
             }
