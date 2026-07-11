@@ -21,6 +21,7 @@ pipeline {
                         echo "Hello from the Script..!"
                         echo
                         echo $COURSE
+                        echo $DURATION
                     """
                 }
             }
