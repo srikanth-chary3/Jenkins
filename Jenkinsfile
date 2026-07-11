@@ -52,7 +52,7 @@ pipeline {
     post {
         always {
             echo "I will say hello again"
-            cleanws()
+            //cleanWs()
         }
         success {
             echo "I will say hello, when it is a Success"
