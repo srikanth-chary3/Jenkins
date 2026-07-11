@@ -1,9 +1,12 @@
+// This is said to be Pre-Build section
 pipeline {
     agent {
         node {
             label "AGENT-1"
         }
     }
+
+// This is said to be Build section
     stages {
         stage("Build") {
             steps {
@@ -42,6 +45,8 @@ pipeline {
             }
         }
     }
+    
+// This is said to be Post-Build section
     post {
         always {
             echo "I will say hello again"
