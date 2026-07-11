@@ -10,34 +10,37 @@ pipeline {
 
 // This is said to be Build section
     stages {
-        stage ("Build") {
+        stage("Build") {
             steps {
+                echo "Building"
                 script {
                     sh """
                         echo
-                        echo "Hello from the Script..!
+                        echo "Hello from the Script..!"
                         echo
                     """
                 }
             }
         }
-        stage ("Test") {
+        stage("Test") {
             steps {
+                echo "Testing"
                 script {
                     sh """
                         echo
-                        echo "Hello from the Script..!
+                        echo "Hello from the Script..!"
                         echo
                     """
                 }
             }
         }
-        stage ("Deploy") {
+        stage("Deploy") {
             steps {
+                echo "Deploying"
                 script {
                     sh """
                         echo
-                        echo "Hello from the Script..!
+                        echo "Hello from the Script..!"
                         echo
                     """
                 }
