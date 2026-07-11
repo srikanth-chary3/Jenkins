@@ -6,6 +6,7 @@ pipeline {
         }
     }
 
+
     // Environment Variables
     environment {
         COURSE="Jenkins"
@@ -41,7 +42,8 @@ pipeline {
                         echo
                         echo "Hello from the Script..!"
                         echo
-                        sleep '20'
+                        // used while using abort function
+                        # sleep '20'
                     """
                 }
             }
