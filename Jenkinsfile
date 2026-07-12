@@ -6,7 +6,6 @@ pipeline {
         }
     }
 
-
     // Environment Variables
     environment {
         COURSE="Jenkins"
@@ -30,7 +29,7 @@ pipeline {
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
 
-// This is said to be Build section
+    // This is said to be Build section
     stages {
         stage("Build") {
             steps {
