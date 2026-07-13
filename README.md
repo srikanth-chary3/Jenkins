@@ -32,7 +32,7 @@ xfs_growfs /home
 ### Jenkins Plugins
 Pipeline: stage viewer
 GitHub
-Pipeline utility steps
+Pipeline utility steps - for read like utilities
 
 
 ### Master Agent Architecture
