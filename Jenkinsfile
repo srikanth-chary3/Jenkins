@@ -60,20 +60,20 @@ pipeline {
             }
         }
         stage("Deploy") {
-            // Using input for manual intervention whether to approve the request or not while running the pipeline
-            // We can use this in defferent environments like UAT, Pre PROD, Staging and PROD environments
-            // input {
-            //     message "Should we continue?"
-            //     ok "Yes, we should."
-            //     submitter "alice,bob"
-            //     parameters {
-            //         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
-            //     }
-            // }
-        // When is used to check the condition whether it is true it will continue or false it will stop pipeline
-            when {
-                expression { "$params.DEPLOY" == "true" }
+            Using input for manual intervention whether to approve the request or not while running the pipeline
+            We can use this in defferent environments like UAT, Pre PROD, Staging and PROD environments
+            input {
+                message "Should we continue?"
+                ok "Yes, we should."
+                submitter "alice,bob"
+                parameters {
+                    string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+                }
             }
+        // When is used to check the condition whether it is true it will continue or false it will stop pipeline
+            // when {
+            //     expression { "$params.DEPLOY" == "true" }
+            // }
 
             steps {
                 echo "Deploying"
