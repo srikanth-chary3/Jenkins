@@ -14,7 +14,7 @@ pipeline {
 
     // Options
     options {
-        timeout (time: 10, unit: 'SECONDS')
+        //timeout (time: 10, unit: 'SECONDS')
 
         // It makes the other or second job to wait until the first job finishes
         disableConcurrentBuilds()
