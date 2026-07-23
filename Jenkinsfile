@@ -60,8 +60,8 @@ pipeline {
             }
         }
         stage("Deploy") {
-            Using input for manual intervention whether to approve the request or not while running the pipeline
-            We can use this in defferent environments like UAT, Pre PROD, Staging and PROD environments
+            // Using input for manual intervention whether to approve the request or not while running the pipeline
+            // We can use this in defferent environments like UAT, Pre PROD, Staging and PROD environments
             input {
                 message "Should we continue?"
                 ok "Yes, we should."
