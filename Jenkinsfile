@@ -15,7 +15,7 @@ pipeline {
 
     // Options
     options {
-        //timeout (time: 10, unit: 'SECONDS')
+        timeout (time: 10, unit: 'SECONDS')
 
         // It makes the other or second job to wait until the first job finishes
         disableConcurrentBuilds()
@@ -55,7 +55,7 @@ pipeline {
                         echo "Hello from the Script..!"
                         echo
                         # used while checking the abort function in post build section
-                        # sleep '20'
+                        sleep '20'
                     """
                 }
             }
