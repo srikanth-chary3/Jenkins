@@ -1,10 +1,11 @@
 // This is said to be Pre-Build section
 pipeline {
-    agent {
-        node {
-            label "AGENT-1"
-        }
-    }
+    agent any
+    // agent {
+    //     node {
+    //         label "AGENT-1"
+    //     }
+    // }
 
     // Environment Variables
     environment {
