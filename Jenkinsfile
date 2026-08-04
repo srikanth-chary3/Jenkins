@@ -94,6 +94,7 @@ pipeline {
         always {
             echo "I will say hello again"
             // It cleans the workspace
+            // It is always not necessary to clear the dependencies
             cleanWs()
         }
         success {
