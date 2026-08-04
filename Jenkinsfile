@@ -95,6 +95,7 @@ pipeline {
             echo "I will say hello again"
             // It cleans the workspace
             // It is always not necessary to clear the dependencies
+            // Because everytime the pipeline needs to download the dependencies like new build
             cleanWs()
         }
         success {
