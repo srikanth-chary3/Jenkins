@@ -14,6 +14,8 @@
     * git
     * maven
     * docker
+    * rebulder
+    * sonarqube in plugins and also adding in tools section with a specifica version
     * kubectl, etc...
 
 #### Pipelines
