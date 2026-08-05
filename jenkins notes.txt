@@ -21,7 +21,7 @@
 #### Pipelines
 In pipelines we have 3 most imp things they are:
 1. Pre Build
-2. Build ( all the other steps or stages come under this section)
+2. Build (all the other steps or stages come under this section)
 3. Post Build
 
 * Scripted pipeline
